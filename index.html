@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><title>Zahir Sadik — Electrical & Electronic Engineering</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07111F;--bg2:#0B1F3A;--tx:#E8EEF5;--mu:#93A5BA;--ln:rgba(147,165,186,.2);--card:rgba(18,60,105,.22);--a:#21B6C7;--b:#4A9BE0;--g:linear-gradient(135deg,#123C69,#1769AA 55%,#21B6C7);--sh:0 20px 50px -20px rgba(0,0,0,.6);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#F5F8FB;--bg2:#E6EEF6;--tx:#12202E;--mu:#5B6B7C;--ln:rgba(11,31,58,.15);--card:#fff;--a:#0E8A98;--b:#1769AA;--sh:0 20px 40px -22px rgba(11,31,58,.35)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Manrope,system-ui,sans-serif;background-image:linear-gradient(var(--ln) 1px,transparent 1px),linear-gradient(90deg,var(--ln) 1px,transparent 1px);background-size:64px 64px;background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(60% 40% at 80% 0,rgba(33,182,199,.14),transparent),radial-gradient(50% 40% at 0 30%,rgba(23,105,170,.2),transparent),var(--bg);opacity:.93;z-index:-1}
+a{color:var(--a)}:focus-visible{outline:3px solid var(--a);outline-offset:3px}
+.mono{font:500 .72rem "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--mu)}
+header{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);transition:.3s}
+header.s{background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--ln)}
+nav{max-width:1180px;margin:auto;padding:14px 24px;display:flex;align-items:center;gap:4px}
+.brand{font-weight:800;letter-spacing:.02em;margin-right:auto;color:var(--tx);text-decoration:none}
+nav a.l{color:var(--mu);text-decoration:none;padding:6px 12px;font-size:.9rem;position:relative}
+nav a.l:after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;background:var(--a);transform:scaleX(0);transition:.25s}
+nav a.l:hover:after,nav a.l.on:after{transform:scaleX(1)}nav a.l.on,nav a.l:hover{color:var(--tx)}
+nav .m{display:flex}.ib{background:none;border:1px solid var(--ln);color:var(--tx);border-radius:8px;width:38px;height:38px;cursor:pointer;margin-left:8px}#mb{display:none}
+.w{max-width:1180px;margin:auto;padding:0 24px}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:700;font-size:.9rem;text-decoration:none;color:#fff;background:var(--g);box-shadow:0 8px 24px -8px rgba(33,182,199,.6);transition:.25s}
+.btn:hover{transform:translateY(-2px)}.btn.o{background:none;border:1px solid var(--ln);color:var(--tx);box-shadow:none}
+.hero{min-height:100vh;padding-top:110px;display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+h1{font-size:clamp(2.8rem,8vw,5.6rem);line-height:.98;margin:.15em 0;font-weight:800;letter-spacing:-.035em;background:linear-gradient(120deg,var(--tx) 40%,var(--a));-webkit-background-clip:text;background-clip:text;color:transparent}
+.themes{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0}.themes span{font:500 .78rem "IBM Plex Mono",monospace;color:var(--a);letter-spacing:.1em;text-transform:uppercase}
+.lead{color:var(--mu);max-width:54ch;font-size:1.06rem}
+.pf{position:relative;max-width:400px;margin-left:auto;width:100%}
+.pf:before{content:"";position:absolute;inset:-14px;border-radius:38% 8% 38% 8%;background:var(--g);filter:blur(30px);opacity:.5}
+.pf .fr{position:relative;aspect-ratio:4/5;border-radius:36% 6% 36% 6%;padding:3px;background:var(--g);box-shadow:var(--sh)}
+.pf .in{width:100%;height:100%;border-radius:calc(36% - 3px) 4px calc(36% - 3px) 4px;overflow:hidden;background:linear-gradient(160deg,var(--bg2),var(--bg));display:grid;place-items:center;text-align:center;color:var(--mu);font-size:.75rem}
+.pf img{width:100%;height:100%;object-fit:cover}
+.sec{padding:80px 0 20px}.sn{font:500 .8rem "IBM Plex Mono";color:var(--a)}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.02em;line-height:1.1;margin:.2em 0 .5em;font-weight:800}h3{margin:.3em 0;font-size:1.25rem}
+.snap{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:var(--card);box-shadow:var(--sh)}
+.snap div{padding:24px;border-right:1px solid var(--ln)}.snap div:last-child{border:0}.snap b{display:block;font-size:2rem;background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.2}
+.rt{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--ln)}
+.rt div{padding:22px 16px 22px 0;border-right:1px solid var(--ln);padding-left:16px;transition:.3s}.rt div:hover{background:var(--card)}.rt div:first-child{padding-left:0}.rt b{display:block;font-size:1.05rem}.rt small{color:var(--mu)}
+.fg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.fg .c1,.fg .c2,.fg .c3,.fg .c4{grid-column:span 1}.fg .pc{height:100%}.fg .pc .t{flex:1;display:flex;flex-direction:column}.fg .pc .mv{margin-top:auto !important}
+.pc{position:relative;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;text-decoration:none;color:var(--tx);background:var(--card);border:1px solid var(--ln);transition:.3s;box-shadow:var(--sh)}
+.pc:hover{transform:translateY(-4px);border-color:var(--a)}.pc .v{aspect-ratio:16/8;overflow:hidden;background:var(--g);position:relative;display:grid;place-items:center}
+.pc .v img{width:100%;height:100%;object-fit:cover;object-position:top;background:#fff;transition:transform .5s}.pc:hover .v img{transform:scale(1.05)}
+.pc .v em{font:800 3.4rem/1 Manrope;color:rgba(255,255,255,.85);font-style:normal;letter-spacing:-.04em}
+.pc .t{padding:20px 22px 24px}.pc p{color:var(--mu);margin:.3em 0 .8em;font-size:.92rem}.pc.sm .v{aspect-ratio:16/6}
+.tg{display:inline-block;font:.68rem "IBM Plex Mono";padding:2px 9px;border:1px solid var(--ln);border-radius:20px;margin:2px 4px 2px 0;color:var(--mu)}
+.mv{color:var(--a);font-weight:700;font-size:.85rem}
+.jr{position:relative;border-left:2px solid var(--ln);margin-left:8px}.jr>div{padding:0 0 30px 32px;position:relative;max-width:760px}
+.jr>div:before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--g);box-shadow:0 0 0 5px var(--bg)}
+.cta{margin:100px 0 60px;padding:64px 40px;border-radius:20px;background:var(--g);text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta h2{max-width:20ch;margin:0 auto 24px}.cta .btn{background:#fff;color:#0B1F3A;margin:4px}.cta .btn.o{background:none;color:#fff;border-color:rgba(255,255,255,.6)}
+.ph{padding:150px 0 30px}.ph h1{font-size:clamp(2.4rem,6vw,4.4rem)}
+.two{display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:start}.two.r{grid-template-columns:1.4fr 1fr}
+.flow{display:grid;gap:0;max-width:640px}.flow div{position:relative;padding:14px 20px;border:1px solid var(--ln);background:var(--card);border-left:4px solid var(--a);border-radius:6px}
+.flow div+div{margin-top:22px}.flow div+div:before{content:"↓";position:absolute;top:-22px;left:24px;color:var(--a)}
+.ed{border-top:1px solid var(--ln);padding:28px 0;display:grid;grid-template-columns:120px 1fr;gap:24px}.ed>.mono{color:var(--a)}
+.ed ul{margin:.3em 0;padding-left:1.1em;color:var(--mu)}.ed li{margin:.25em 0}
+table{border-collapse:collapse;width:100%}td,th{padding:10px 12px;border-bottom:1px solid var(--ln);text-align:left;font-size:.92rem}th{color:var(--a);font:500 .72rem "IBM Plex Mono";text-transform:uppercase}.sc{overflow-x:auto}
+.fig{margin:0;border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff}.fig img{width:100%;display:block}.fig figcaption{padding:8px 12px;font-size:.78rem;color:#445;background:#f3f6f9}
+.fg2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.gph{aspect-ratio:16/9;border:1.5px dashed var(--ln);border-radius:10px;display:grid;place-items:center;color:var(--mu);font-size:.8rem;text-align:center;padding:12px}
+.note{border-left:3px solid var(--a);padding:8px 16px;color:var(--mu);font-size:.88rem;background:var(--card)}
+.chips{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:22px}.chips button{width:100%;min-width:0;background:none;border:1px solid var(--ln);color:var(--mu);padding:10px 12px;border-radius:20px;cursor:pointer;margin:0;font:500 .8rem Manrope;white-space:nowrap}.chips button.on{background:var(--g);color:#fff;border-color:transparent}.fg2>div{display:flex}.fg2 .pc{width:100%;height:100%;min-height:500px}.fg2 .pc .t{display:flex;flex-direction:column;flex:1}.fg2 .pc .mv{margin-top:auto !important}.chips button.on{background:var(--g);color:#fff;border-color:transparent}
+.cl{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}.cl a{padding:28px;border:1px solid var(--ln);border-radius:14px;background:var(--card);text-decoration:none;color:var(--tx);transition:.3s;display:block}.cl a:hover{border-color:var(--a);transform:translateY(-3px)}.cl b{font-size:1.2rem;word-break:break-word}
+footer{border-top:1px solid var(--ln);padding:48px 0 40px;margin-top:60px;background:linear-gradient(var(--bg),var(--bg2))}footer .w{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer a{margin-right:16px}
+.rv{opacity:0;transform:translateY(16px);transition:.7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){#mb{display:inline-block}nav .m{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--ln);padding:12px 24px;flex-direction:column}nav .m.open{display:flex}nav a.l{padding:12px 0}
+.hero,.two,.two.r{grid-template-columns:1fr;gap:36px}.hero{padding-top:100px}.pf{margin:0 auto;max-width:300px}.snap,.rt{grid-template-columns:1fr 1fr}.snap div{border-bottom:1px solid var(--ln)}.rt div{border-bottom:1px solid var(--ln)}
+.fg{grid-template-columns:1fr}.fg .c1,.fg .c2,.fg .c3,.fg .c4{grid-column:auto}.ed{grid-template-columns:1fr;gap:6px}.cta{padding:44px 22px}}
+@media(max-width:1100px){.chips{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){.chips{grid-template-columns:repeat(2,minmax(0,1fr))}.chips button{white-space:normal;min-height:42px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.rv{opacity:1;transform:none}}
+.pdfbox{border:1px solid var(--bd);border-radius:18px;overflow:hidden;background:var(--bg2);box-shadow:0 18px 50px rgba(0,0,0,.12)}
+.pdfbox object{display:block;background:#fff;min-height:720px}
+</style></head><body>
+<header id="hd"><nav aria-label="Main"><a class="brand" href="#/">Zahir Sadik</a><div class="m" id="mn"></div><button class="ib" id="th" aria-label="Toggle theme">◐</button><button class="ib" id="mb" aria-label="Menu" aria-expanded="false">☰</button></nav></header>
+<main id="app"></main>
+<footer><div class="w"><div><b>Zahir Sadik</b><br><span class="mono">Electrical &amp; Electronic Engineering</span><br><span class="mono" style="color:var(--a)">Power Systems • Renewable Energy • Intelligent Energy Systems</span></div><div><a href="https://linkedin.com/in/zahirsadik">LinkedIn</a><a href="mailto:zahirsadik.19@gmail.com">Email</a><br><span class="mono">© 2026 Zahir Sadik</span></div></div></footer>
+<script>
+/* ===== EDIT ME ===== */
+const PORTRAIT="assets/images/Zahir Sadik.jpg";  /* local 4:5 professional portrait */
+const CV_URL="assets/documents/Zahir Sadik CV.pdf";  /* local CV PDF */
+const LINKEDIN="https://linkedin.com/in/zahirsadik";
+const IMG={
+  poster:"assets/images/Thesis Poster.jpg",
+  fcst:"assets/images/Forecast.JPG",
+  disp:"assets/images/Dispatch.JPG",
+  eld:"assets/images/eld 1.JPG",
+  eld2:"assets/images/eld 2.JPG",
+  pareto:"assets/images/pareto.JPG",
+  solar:"assets/images/Solar PV design and sizing.JPG",
+  sapAlu1:"assets/images/sap alu 1.png",
+  sapAlu2:"assets/images/sap alu 2.png",
+  sapAluPcb:"assets/images/sap alu pcb.png",
+  sapCtrlPcb:"assets/images/sap controller sequence pcb.png",
+  sapIrPcb:"assets/images/sap instruction register pcb.png",
+  sapIr:"assets/images/sap instruction register.png",
+  model:"assets/images/Model Performance Summarry.JPG",
+  rooftop:"assets/images/rooftop",
+  bluetooth:"assets/images/bluetooth",
+  omr:"assets/images/omr",
+  motion:"assets/images/motion sensor"
+};
+const NAV=[["","Home"],["about","About"],["research","Research"],["projects","Projects"],["experience","Experience"],["cv","CV"],["contact","Contact"]];
+const P=[
+{id:"thesis",n:"01",cat:"Power & Energy",k:"pe",big:1,img:"poster",title:"EV Charging Harmonics in a PV–Wind–BESS Microgrid",sum:"Undergraduate thesis: uncertainty-based harmonic study with BESS-converter mitigation in DIgSILENT PowerFactory.",tools:["DIgSILENT PowerFactory","Python API","Monte Carlo","PSO / DE"],
+ov:"Investigates EV-charging-induced harmonic distortion in a PV–wind–BESS integrated 9-bus microgrid using DIgSILENT PowerFactory, with an 8760-hour Bhola (Bangladesh) renewable dataset and NREL EVI-Pro charging profiles.",
+prob:"EV chargers are nonlinear power-electronic loads that inject harmonic currents. Higher EV and renewable penetration adds uncertainty and power-quality challenges. BESS converters are mostly used for energy management, and the converter rating needed for harmonic mitigation is rarely quantified.",
+obj:["Develop an integrated PV–wind–EV–BESS model in a generic 9-bus microgrid","Incorporate uncertainty through annual dataset-driven Monte Carlo simulation","Evaluate EV impacts through harmonic load flow","Design BESS-based harmonic compensation via optimized harmonic current injection","Compare PSO and DE; relate converter rating to achievable THD reduction"],
+meth:["9-bus PowerFactory microgrid","8760-h dataset: Bhola renewables + NREL EVI-Pro EV profile","AR(1)-correlated Monte Carlo sampling, 300 scenarios (uncertainty)","Harmonic load flow, 5% voltage THD limit","BESS converter as active harmonic compensator","PSO and DE optimize 5th/7th harmonic magnitude and phase","Converter sizing: 1.0 and 1.5 MVA"],
+arch:"EV charger at Bus 4 is the primary harmonic source. PV is modeled as four arrays at Bus 6 (total 1.228 MW), with wind and a BESS providing energy management and harmonic compensation.",
+impl:"PSO and DE were implemented through the PowerFactory Python API.",
+res:[["Baseline","8.08% THD (Bus 8); 5.39% average; 5 of 9 buses non-compliant"],["PSO","Improved THD; Bus 5 marginally above limit (5.03%)"],["DE","Full compliance; worst 4.69%, average 3.59%"],["Converter","1.0 MVA insufficient; 1.5 MVA achieved complete mitigation"]],
+con:"Team thesis with Abrar Mubasshir Rahman and Atahar Nur Faiz. The poster credits the team; your individual share is not specified in the files — add it here.",figs:[["poster","Thesis poster, including the generic 9-bus single-line diagram drawn in DIgSILENT PowerFactory"]],rep:"Thesis.pdf"},
+{id:"payra",n:"02",cat:"AI / Renewable",k:"pe ml",big:1,img:"fcst",title:"AI-Driven Renewable Forecasting & Load Dispatch, Payra Microgrid",sum:"Random Forest forecast of a composite Green Score and sliding-window scheduling of community loads.",tools:["Python","Pandas","Random Forest","Feature engineering"],
+ov:"System-level analysis for a hybrid microgrid in Patuakhali, Bangladesh. A composite Green Score is forecast hourly, then used to choose run-time windows for three community loads.",
+prob:"Can a Random Forest trained on historical Payra microgrid data forecast the Green Score, and can a sliding-window algorithm find the best daily run-time windows for three loads?",
+obj:["Forecast hourly Green Score from weather variables","Schedule loads in the highest-scoring consecutive windows"],
+meth:["Green Score: g = 0.60·P̂ + 0.40·Ē (capped renewable penetration and normalized excess electrical production)","Features: irradiance, wind speed, hour of day (Gini importance screening)","Random Forest Regressor: 200 trees, max depth 10; 80/20 split (7,008 / 1,752 samples)","Baseline: persistence forecast","Sliding-window dispatch over a 15-day March 2026 Patuakhali forecast"],
+arch:"Training data: 8,760 hourly records for calendar year 2007. Test input: 15-day hourly weather forecast (irradiance, wind speed, datetime) for Patuakhali.",impl:"Python pipeline with Pandas and scikit-learn; dispatch heuristic runs independently for each load and day.",
+res:[["MAE","0.1299 vs 0.2450 persistence (47% reduction)"],["RMSE / R²","0.1846 / 0.5822"],["Dispatch","Water Pump (4 h), Clinic (8 h) and Street Lights (4 h, evening-constrained) scheduled per day"]],
+con:"Team project with Abrar Mubasshir Rahman and Asif Sarkar (EEE 4710). Individual share is not specified — add it here.",figs:[["fcst","15-day hourly forecast: irradiance, wind speed and predicted Green Score"],["model","Model performance summary"],["disp","Optimized run-time windows for the first three forecast days"]],rep:"Project_Report_Indecision_Tree_EEE_4710.pdf"},
+{id:"eld",n:"03",cat:"Power & Energy",k:"pe",big:1,img:"eld",title:"Economic & Emission Dispatch",sum:"Multi-objective dispatch of a four-unit, 1000 MW thermal plant in Python.",tools:["Python","NumPy","SciPy"],
+ov:"Complex engineering problem for Power System III (EEE 4631): a literature-informed four-unit thermal model solved for cost, emission and combined objectives.",
+prob:"Purely economic dispatch raises emissions; purely environmental dispatch raises cost. How do the objectives trade off?",
+obj:["Solve ELD, EED and weighted multi-objective dispatch","Analyze the cost–emission trade-off and its societal impact"],
+meth:["Quadratic fuel-cost and exponential emission functions per unit","Constraints: power balance (1000 MW) and generator limits","ELD via lambda-iteration; EED via SciPy minimize","Weighted-sum combined objective; weight sweep and Pareto front"],
+arch:"Four thermal units, total demand 1000 MW, transmission losses ignored.",impl:"Python with NumPy and scipy.optimize.minimize.",
+res:[["ELD","$36,989.84/hr · 606.38 kg/hr"],["EED","$37,351.53/hr · 595.13 kg/hr"],["Combined","$37,189.08/hr · 597.35 kg/hr"]],
+con:"Group of six (Shuvo, Ifty, Zahir Sadik, Tasrif, Sarkar, Sakib). Individual share is not specified — add it here.",figs:[["eld","Generator power output across ELD, EED and optimized scenarios"],["eld2","Additional ELD / EED result"],["pareto","Total emission vs. weight from the report"]],rep:"EEE_4631_CEP_Group_3.pdf"},
+{id:"solar",n:"04",cat:"Renewable Energy",img:"rooftop",k:"pe",big:1,title:"Rooftop Solar PV for a Dairy Farm, Savar",sum:"PV, battery and MPPT sizing for Shahzadi Dairy Farm, with carbon-footprint comparison.",tools:["SREDA irradiance","PV sizing","Battery sizing","MPPT"],
+ov:"Renewable Energy Systems (EEE 4535) complex engineering problem: an off-grid solar alternative to BREB grid supply for a farm with a 3,200 sq ft shed roof. Biomass was rejected because the owner would not give up land.",
+prob:"The farm's grid consumption has risen and the owner needs cost-cutting measures.",obj:["Size a rooftop PV system to the farm load","Estimate cost, savings and carbon footprint"],
+meth:["Worst-case month (January) irradiance from SREDA: 84 kWh/m²/month, about 2.709 kWh/m²/day","Panel: LONGi 580 W N-type (LR5-72HTH-580W), 2278 × 1134 mm","Battery: 24 V, 70% DOD, about 518.7 Ah","Carbon: 0.6 kg CO₂/kWh (grid, assumed) vs 0.04 kg/kWh (solar)"],
+arch:"Rooftop PV array, MPPT controller, battery bank and inverter.",impl:"Sizing calculations with worst-case insolation.",
+res:[["Panels","6 panels at 10,730 Taka each"],["Setup cost","About 3 lakh Taka incl. inverter, MPPT, battery, wiring"],["Savings","Report estimates 60–65k Taka/year against a 6k Taka monthly bill; 25-year panel warranty"]],
+con:"Group project with IDs listed in the report. Individual share is not specified — add it here.",figs:[["solar","Rooftop solar PV design and sizing" ]],rep:"Project_Report_CEP_EEE_4535.pdf",note:"The source report states the daily load as both 8.8 and 8.5 kWh, so no load figure is shown here."},
+{id:"sap",n:"05",cat:"Digital Electronics",k:"de",big:1,img:"sapAlu1",title:"SAP-1 Architecture-Based 6-Bit Computer",sum:"Design and implementation of a 6-bit computer: ALU, controller-sequencer, instruction register and display.",tools:["Proteus","Digital logic","Assembly","PCB design"],
+ov:"Electrical Circuit II Lab (EEE 4308), Group N.H.P., Nov 2023, Phases C, D and E. A 6-bit computer built on the SAP-1 (Simple-As-Possible) architecture using combinational and sequential circuits.",
+prob:"Build the modules needed to load, add and subtract 6-bit binary data, with a halt input to end execution.",obj:["Design and simulate the ALU, controller-sequencer and instruction register","Produce PCB layouts","Bonus: show output on a 7-segment display"],
+meth:["Block-diagram-level design with control signals (MI, RO, II, IO, CE, CO, AI, AO, BI, OI, SU, EO, J, HLT)","Proteus simulation using basic gates in place of ICs","PCB layouts for the Instruction Register, Controller-Sequencer and ALU"],
+arch:"ALU (74LS86, 74LS83, 74LS00, 74LS04, 74LS245) with subtraction enable and carry out; Instruction Register (74LS173, 7406); Controller-Sequencer on negative-edge-triggered flip-flops (74107, 7473 with logic gates).",impl:"Schematics and PCB designs in Proteus. Challenges: some module versions could not be integrated, two-layer trace routing was difficult, and some Proteus files failed to run because of component combinations.",
+res:[["ALU","All required functions tested; no unexpected behavior observed"],["Modules","ALU, controller-sequencer, instruction register and 7-segment display completed"]],
+con:"ALU and documentation, per the contribution table in the report. Team of six.",figs:[
+["sapAlu1","SAP-1 ALU implementation / simulation"],
+["sapAlu2","SAP-1 ALU second implementation view"],
+["sapAluPcb","ALU PCB layout"],
+["sapCtrlPcb","Controller-sequencer PCB layout"],
+["sapIrPcb","Instruction-register PCB layout"],
+["sapIr","Instruction-register implementation"]],rep:"SAP-1 report.pdf"},
+{id:"ble",n:"06",cat:"Embedded",img:"bluetooth",k:"em",title:"Bluetooth-Interfaced 8051 System",sum:"HC-05 wireless control of LEDs (PWM), relays, Morse output, Caesar decryption and PIN access.",tools:["AT89S52","Assembly","HC-05","Proteus"],ov:"Microcontroller Based System Design Lab (EEE 4706), Group 4.",obj:["Wireless control of eight LEDs with ON/OFF and PWM","Morse code via LED with LCD display","Two relay modules; Caesar cipher decryption; PIN protection","Interrupt-driven serial communication"],rep:"B2_G4.pdf"},
+{id:"omr",n:"07",cat:"MATLAB",img:"omr",k:"mt",title:"Automated OMR Sheet Evaluation",sum:"MATLAB GUI reading roll, test ID and answers by pixel analysis.",tools:["MATLAB","Image processing","GUI"],ov:"Simulation Lab project (EEE 4416) that checks sheet alignment, detects marked circles by black-pixel ratio, penalises double marking and reports pass/fail.",obj:["Load and validate scanned sheets","Score up to 60 questions against an Excel key"]},
+{id:"mot",n:"08",cat:"Electronics",img:"motion",k:"de",title:"Motion Sensor Light",sum:"Smart power consumption, EEE 4518 workshop (Team Three Zeroes).",tools:["Circuit design"],ov:"Electrical and Electronic Workshop project on motion-sensing lighting.",obj:[],nolink:1}];
+const $=s=>document.querySelector(s),app=$("#app");
+const assetSrc=(base)=>{
+  if(!base) return "";
+  return base.match(/\.(?:jpe?g|png|webp|gif|svg)$/i)?base:base+".jpg";
+};
+const fallbackImg=(base,alt,extra="")=>`<img src="${assetSrc(base)}" data-base="${base}" alt="${alt}" ${extra} onerror="(function(i){const b=i.dataset.base||\"\";const exts=[\".JPG\",\".jpeg\",\".JPEG\",\".png\",\".PNG\",\".webp\"];let n=+(i.dataset.try||0);if(n<exts.length){i.dataset.try=n+1;i.src=b+exts[n];}else{i.onerror=null;}})(this)">`;
+const fig=(k,c)=>`<figure class="fig rv">${fallbackImg(IMG[k],c,"loading=\"lazy\"")}<figcaption>${c}</figcaption></figure>`;
+const card=(p,c)=>`<a class="pc ${p.big?'':'sm'} ${c||''} rv" href="#/project/${p.id}"><div class="v">${p.img?fallbackImg(IMG[p.img],p.title+" figure"): `<em>${p.n}</em>`}</div><div class="t"><span class="mono">${p.n} · ${p.cat}</span><h3>${p.title}</h3><p>${p.sum}</p>${p.tools.map(t=>`<span class="tg">${t}</span>`).join("")}<div class="mv" style="margin-top:8px">View project →</div></div></a>`;
+const ph=(a,t,s)=>`<div class="w ph"><span class="mono">${a}</span><h1>${t}</h1>${s?`<p class="lead">${s}</p>`:""}</div>`;
+const portrait=`<div class="pf"><div class="fr"><div class="in">${PORTRAIT?`<img src="${PORTRAIT}" alt="Portrait of Zahir Sadik">`:`<div>Portrait placeholder<br>4:5 · 800×1000 px<br>set PORTRAIT in script</div>`}</div></div></div>`;
+const jr=(a)=>`<div class="jr">${a.map(([d,t,x])=>`<div class="rv"><span class="mono">${d}</span><h3>${t}</h3><span style="color:var(--mu)">${x}</span></div>`).join("")}</div>`;
+const J=[["Aug 2022 – Sept 2026","B.Sc. in EEE, Islamic University of Technology","CGPA 3.86. Power Systems I–III, Renewable Energy System, Operation & Control, Protection, Power Electronics."],["2023 – 2026","Head of Logistics, IEEE RAS IUT Student Branch","Robotics competitions and seminars."],["2023 – 2025","Senior Electrical Subteam Member, Project Altair","Electrical design and PCB development; International Rover Challenge 2024: 6th place, ABEX Task Winner."],["Sept – Nov 2025","Industrial training","BPDB Ghorashal Power Plant · Walton Hi-Tech · Robi Axiata · Bangladesh Atomic Energy Commission."],["2026","Undergraduate thesis","EV charging, PV, wind and BESS harmonic study."]];
+const R={
+"":()=>`<div class="w hero"><div><h1>Zahir<br>Sadik</h1><div class="themes"><span>Power Systems</span><span>Renewable Energy</span><span>Intelligent Energy Systems</span></div><p class="lead">Electrical and Electronic Engineering graduate from Islamic University of Technology (IUT) with a background in power and energy systems, renewable energy, intelligent technologies and engineering research.</p><p><a class="btn" href="${CV_URL}">Download CV</a> &nbsp; <a href="#/projects" class="mv">View Projects →</a></p></div>${portrait}</div>
+<div class="w"><div class="snap rv"><div><span class="mono">Degree</span><b>B.Sc. EEE</b>Islamic University of Technology</div><div><span class="mono">CGPA</span><b>3.86</b>out of 4.00</div><div><span class="mono">Focus</span><b>Power &amp; Energy</b></div><div><span class="mono">Work</span><b>Research &amp; Projects</b></div></div></div>
+<div class="w sec"><span class="sn">03 / RESEARCH FOCUS</span><h2>Research themes</h2><div class="rt rv"><div><b>Power Systems</b><small>Dispatch, operation</small></div><div><b>Renewable Energy</b><small>PV, wind, BESS</small></div><div><b>Power Quality</b><small>Harmonics, IEEE limits</small></div><div><b>EV Integration</b><small>Charging profiles</small></div><div><b>Intelligent Energy</b><small>Forecasting, optimization</small></div></div><p><a class="mv" href="#/research">Undergraduate thesis →</a></p></div>
+<div class="w sec"><span class="sn">04 / FEATURED PROJECTS</span><h2>Selected work</h2><div class="fg"><div class="c1">${card(P[0])}</div><div class="c2">${card(P[1])}</div><div class="c3">${card(P[2])}</div><div class="c4">${card(P[3])}</div></div></div>
+<div class="w sec"><span class="sn">05 / ENGINEERING JOURNEY</span><h2>Journey</h2>${jr(J)}</div>
+<div class="w sec"><span class="sn">06 / TECHNICAL AREAS</span><h2>Technical areas</h2><div class="rt rv"><div><b>Power tools</b><small>DIgSILENT PowerFactory, ETAP, PowerWorld</small></div><div><b>Analysis</b><small>MATLAB, Python, Simulink</small></div><div><b>Electronics</b><small>Proteus, PSpice, EAGLE</small></div><div><b>Embedded</b><small>8051, Assembly, C</small></div><div><b>Reporting</b><small>LaTeX, technical writing</small></div></div></div>
+<div class="w"><div class="cta rv"><h2>Interested in research, engineering collaboration or technical work?</h2><a class="btn" href="${CV_URL}">View CV</a><a class="btn o" href="#/contact">Contact me</a></div></div>`,
+about:()=>`${ph("About","ZAHIR SADIK")}<div class="w two"><div>${portrait}</div><div><p class="lead" style="color:var(--tx)">I am an Electrical and Electronic Engineering graduate from the Islamic University of Technology (IUT), with a keen interest in power and energy systems, renewable energy, intelligent technologies and engineering research. My academic journey has encompassed multidisciplinary projects, research initiatives, robotics and technology driven problem solving. I aspire to contribute to the world through my intellectual curiosity, analytical thinking and a culture of continuous learning, with a particular interest in translating intricate engineering concepts into coherent, practical solutions. Through my work, I aim to contribute to impactful research, cultivate innovation and continually evolve as an engineer and educator.</p><h3>Research interests</h3><p>Renewable Energy · Optimization · EV Integration · Harmonics Mitigation · Energy Systems · Grid Stability</p></div></div>
+<div class="w sec"><h2>Education</h2><div class="ed rv"><span class="mono">2022 – 2026</span><div><h3>Islamic University of Technology</h3>B.Sc. in Electrical and Electronic Engineering · CGPA 3.86</div></div><div class="ed rv"><span class="mono">2021</span><div>HSC, Rajuk Uttara Model College · GPA 5.00</div></div><div class="ed rv"><span class="mono">2019</span><div>SSC, Rajuk Uttara Model College · GPA 5.00</div></div></div>`,
+research:()=>{const p=P[0];return `${ph("Undergraduate thesis","EV Charging Impacts with PV, Wind and BESS in a 9-Bus Microgrid","Uncertainty-based study with harmonic mitigation. Supervised by Prof. Dr. Ashik Ahmed, IUT EEE.")}<div class="w two r"><div><span class="sn">01 / PROBLEM</span><p>${p.prob}</p><span class="sn">02 / SYSTEM MODEL</span><p>${p.arch}</p></div><div>${fig("poster","Thesis poster with 9-bus single-line diagram")}</div></div>
+<div class="w sec"><span class="sn">03 / METHODOLOGY</span><h2>Research workflow</h2><div class="flow rv">${["EV charging (NREL EVI-Pro profile, Bus 4)","Renewable integration (PV, wind, BESS)","Uncertainty modelling: AR(1) Monte Carlo, 300 scenarios","Power-system simulation: DIgSILENT PowerFactory","Harmonic analysis: harmonic load flow, 5% THD limit","Mitigation: BESS converter injection optimized by PSO / DE"].map(x=>`<div>${x}</div>`).join("")}</div><p class="note rv" style="max-width:640px">Monte Carlo generates uncertainty scenarios. Mitigation comes from the optimized BESS harmonic injection.</p></div>
+<div class="w sec"><span class="sn">04 / RESULTS</span><h2>Results</h2><div class="sc rv"><table><tr><th>Case</th><th>Outcome</th></tr>${p.res.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join("")}</table></div><p>Converter headroom, not the optimizer, limited mitigation.</p><span class="sn">05 / CONTRIBUTION</span><p>An uncertainty-aware harmonic assessment using real Bangladesh renewable data; BESS converters used for harmonic compensation alongside energy management; quantified converter-rating requirements.</p>${p.tools.map(t=>`<span class="tg">${t}</span>`).join("")}<p><a class="btn" href="#/project/thesis">Full case study</a></p></div>`},
+projects:()=>`${ph("Projects","Engineering case studies","Power and energy work leads; supporting course projects show breadth.")}<div class="w"><div class="chips" id="ch">${[["all","All"],["pe","Power & Energy"],["ml","AI / ML"],["de","Digital / Electronics"],["em","Embedded"],["mt","MATLAB"]].map((c,i)=>`<button data-f="${c[0]}" class="${i?'':'on'}">${c[1]}</button>`).join("")}</div><div class="fg2" id="pg" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">${P.map(p=>`<div data-k="${p.k}" ${p.big?'style="grid-column:span 1"':''}>${p.nolink?card({...p,id:"x"}).replace('href="#/project/x"','href="#/experience"'):card(p)}</div>`).join("")}</div></div>`,
+experience:()=>`${ph("Experience","Training, leadership and robotics")}<div class="w">${[["Sept 2025","Bangladesh Power Development Board","Industrial Trainee, Ghorashal Power Plant · Palash, Narsingdi"],["Oct 2025","Walton Hi-Tech Industries PLC","Industrial Trainee, Technical Division · Chandra, Gazipur"],["Nov 2025","Robi Axiata Limited","Industrial Trainee, Technical Division · Gulshan, Dhaka"],["Nov 2025","Bangladesh Atomic Energy Commission","Industrial Trainee, Electrical Division · Savar, Dhaka"]].map(([d,t,x])=>`<div class="ed rv"><span class="mono">${d}</span><div><h3>${t}</h3>${x}</div></div>`).join("")}<div class="ed rv"><span class="mono">2023 – 2026</span><div><h3>IEEE Robotics and Automation Society, IUT Student Branch</h3>Head of Logistics<ul><li>Managed logistics for robotics competitions and society events</li><li>Led planning and execution of competitions and seminars</li></ul></div></div><div class="ed rv"><span class="mono">2023 – 2025</span><div><h3>Project Altair</h3>Senior Electrical Subteam Member<ul><li>Electrical system design and PCB development for robotics projects</li><li>Mentored juniors in power electronics and circuit design</li><li>International Rover Challenge 2024: 6th place, ABEX Task Winner</li></ul></div></div><p class="note">Training descriptions: the CV lists only organization, division and date.</p></div>`,
+cv:()=>`${ph("Curriculum vitae","CV")}<div class="w"><a class="btn" href="${CV_URL}" download>Download CV</a><div class="pdfbox" style="margin-top:24px;max-width:900px"><object data="${CV_URL}" type="application/pdf" width="100%" height="900"><p>CV preview is not available in this browser. <a href="${CV_URL}">Open the CV PDF</a>.</p></object></div></div>`, 
+contact:()=>`${ph("Contact","Get in touch","Research, engineering collaboration or technical work.")}<div class="w cl"><a href="mailto:zahirsadik.19@gmail.com"><span class="mono">Email</span><br><b>zahirsadik.19@gmail.com</b></a><a href="${LINKEDIN}"><span class="mono">LinkedIn</span><br><b>linkedin.com/in/zahirsadik</b></a><a href="#/"><span class="mono">Location</span><br><b>Dhaka, Bangladesh</b></a></div><div class="w"><div class="cta rv"><h2>Let's talk about power and energy systems.</h2><a class="btn" href="mailto:zahirsadik.19@gmail.com">Email me</a></div></div>`,
+project:id=>{const p=P.find(x=>x.id==id);if(!p)return R[""]();const L=(h,c)=>c?`<div class="ed rv"><span class="mono">${h}</span><div>${c}</div></div>`:"";
+return `${ph(p.cat,p.title,p.sum)}<div class="w">${p.tools.map(t=>`<span class="tg">${t}</span>`).join("")}${L("01 Overview",p.ov)}${L("02 Problem",p.prob)}${L("03 Objective",p.obj&&p.obj.length?`<ul>${p.obj.map(o=>`<li>${o}</li>`).join("")}</ul>`:"")}${L("04 Method",p.meth?`<ul>${p.meth.map(o=>`<li>${o}</li>`).join("")}</ul>`:"")}${L("05 Architecture",p.arch)}${L("06 Implementation",p.impl)}${L("07 Results",p.res?`<div class="sc"><table>${p.res.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td></tr>`).join("")}</table></div>`:"")}${L("08 Contribution",p.con)}${p.note?`<p class="note">${p.note}</p>`:""}${p.figs&&p.figs.length?`<div class="fg2" style="margin-top:24px">${p.figs.map(f=>fig(f[0],f[1])).join("")}</div>`:p.gnote?`<div class="gph" style="margin-top:24px">${p.gnote}</div>`:""}${p.rep?`<div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="assets/documents/${encodeURIComponent(p.rep).replace(/%2F/g,"/")}" target="_blank" rel="noopener">View report ↗</a><a class="btn o" href="assets/documents/${encodeURIComponent(p.rep).replace(/%2F/g,"/")}" download>Download report</a></div>`:""}<p><a class="mv" href="#/projects">← All projects</a></p></div>`}};
+function route(){const h=(location.hash||"#/").replace(/^#\/?/,"");const [a,b]=h.split("/");let f=a=="project"?()=>R.project(b):R[a]||R[""];app.innerHTML=f();
+const cur=R[a]?a:(a=="project"?"projects":"");document.querySelectorAll("nav a.l").forEach(x=>x.classList.toggle("on",x.dataset.r==cur));$("#mn").classList.remove("open");$("#mb").setAttribute("aria-expanded","false");
+document.title=(a?a[0].toUpperCase()+a.slice(1)+" — ":"")+"Zahir Sadik";scrollTo(0,0);
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&(x.target.classList.add("in"),io.unobserve(x.target))),{threshold:.1});app.querySelectorAll(".rv").forEach(x=>io.observe(x));
+const ch=$("#ch");if(ch)ch.onclick=e=>{const f=e.target.dataset.f;if(!f)return;ch.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b==e.target));document.querySelectorAll("#pg>div").forEach(d=>d.style.display=f=="all"||d.dataset.k.split(" ").includes(f)?"":"none")}}
+$("#mn").innerHTML=NAV.map(([r,t])=>`<a class="l" data-r="${r}" href="#/${r}">${t}</a>`).join("");
+$("#mb").onclick=()=>{const o=$("#mn").classList.toggle("open");$("#mb").setAttribute("aria-expanded",o)};
+$("#th").onclick=()=>{const r=document.documentElement;r.dataset.theme=r.dataset.theme=="dark"?"light":"dark"};
+addEventListener("scroll",()=>$("#hd").classList.toggle("s",scrollY>20));addEventListener("hashchange",route);route();
+</script></body></html>
